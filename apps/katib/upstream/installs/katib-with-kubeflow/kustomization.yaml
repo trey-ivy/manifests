@@ -20,13 +20,13 @@ images:
 patchesStrategicMerge:
   - patches/remove-resources-patch.yaml
 
-patchesJson6902:
-  - path: patches/mysql-pvc.yaml
-    target:
-      version: v1
-      name: katib-mysql
-      kind: PersistentVolumeClaim
-      namespace: kubeflow
+# patchesJson6902:
+#   - path: patches/mysql-pvc.yaml
+#     target:
+#       version: v1
+#       name: katib-mysql
+#       kind: PersistentVolumeClaim
+#       namespace: kubeflow
 
 vars:
 - fieldref:
