@@ -11,6 +11,7 @@ metadata:
   name: katib-mysql
   namespace: kubeflow
 spec:
+  storageClassName: katib
   accessModes:
   - ReadWriteOnce
   resources:
